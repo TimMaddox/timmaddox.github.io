@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<script src="https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
+    <script>
+    $Lightning.use("c:keckPoc", function() {
+            // Create the LWC component with the parameters passed as attributes
+        $Lightning.createComponent(
+                "c:keckPocLWC", // LWC component name
+                {
+
+                },
+                "pocContent" // The container where the component will render
+            );
+        }, "https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com");
+
+    </script>
+    <div Id="pocContent">
+
+    </div>
+
+</html>
