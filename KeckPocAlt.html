@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1 interactive-widget=overlays-content maximum-scale=1"/>
+<style>
+    div[id='auraErrorMessage']
+    {
+        display: none;
+    }
+    
+    
+</style>
+
+<script src="https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
+    <script>
+    $Lightning.use("c:keckPoc", function() {
+            // Create the LWC component with the parameters passed as attributes
+        $Lightning.createComponent(
+                "c:lwcBanner", // LWC component name
+                {
+                    bannerMessage: "Welcome to our site!", // Pass the message
+                    bannerBackgroundColor: "#ffcc00", // Set background color
+                    bannerTextColor: "#000000" // Set text color
+                },
+                "pocContent" // The container where the component will render
+            );
+        }, "https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com");
+
+    </script>
+    <div Id="pocContent">
+
+    </div>
+
+</html>
