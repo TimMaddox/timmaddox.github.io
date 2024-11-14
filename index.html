@@ -8,23 +8,22 @@
     
     
 </style>
-
-<script src="https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
-    <script>
-    $Lightning.use("c:keckPoc", function() {
-            // Create the LWC component with the parameters passed as attributes
-        $Lightning.createComponent(
-                "c:keckPocLWC", // LWC component name
-                {
-
-                },
-                "pocContent" // The container where the component will render
-            );
-        }, "https://keckmedicine--xferbuild3.sandbox.my.salesforce-sites.com");
-
-    </script>
-    <div Id="pocContent">
-
-    </div>
+<div id="LightningComponentid"></div>
+<script src="https://tulsahealthdepartment--uat.sandbox.my.salesforce-sites.com/lightning/lightning.out.js"></script>
+<script>
+     $Lightning.use("c:FamilyAdvocatesContactFormApp", function() {
+        $Lightning.createComponent("c:familyAdvocatesContactForm",
+          {  
+          },
+          "LightningComponentid",
+              function(cmp) {
+                console.log("LWC component was created");
+                // do some stuff
+              }
+          );
+        },
+       'https://tulsahealthdepartment--uat.sandbox.my.salesforce-sites.com'
+      );
+</script>
 
 </html>
